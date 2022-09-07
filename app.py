@@ -121,7 +121,7 @@ def st_ui():
 
 
 from PIL import Image
-image = Image.open('infocryptoapp.jpg')
+image = Image.open('infocryptoapp.png')
 
 st.image(image, caption='Informations on Crypto Live')
 
