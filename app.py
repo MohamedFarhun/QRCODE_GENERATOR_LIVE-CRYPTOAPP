@@ -119,10 +119,17 @@ def st_ui():
    
 from PIL import Image
 
-filename = "infocryptoapp.png"
-with Image.open(filename) as image:
-	width, height = image.size
-#Image.size gives a 2-tuple and the width, height can be obtained
+#read the image
+im = Image.open("infocryptoapp.png")
+
+#show image
+im.show()
+
+import matplotlib.pyplot as plt
+import matplotlib.image as mpimg
+img = mpimg.imread('infocryptoapp.png')
+imgplot = plt.imshow(img)
+plt.show()
 
 
 if __name__ == "__main__":
