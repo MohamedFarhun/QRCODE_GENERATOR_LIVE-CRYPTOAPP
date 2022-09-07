@@ -116,55 +116,16 @@ def st_ui():
     st.caption("Get All The Info Regarding Your Favorite Crypto Currency")
     st.info("Developed by MOHAMED FARHUN M, NANDHAKUMAR S, DHIVAKAR S [Daisi Hackathon]")
     st.header("Scan this Generated QRcode below to land into our Infocrypto Tracking Project")
-    url = st.text_input(label='Web Site URL', placeholder='Type your url')
-    if url:
-        analyze_result = analyze_webpage(url)
-        if type(analyze_result) is dict:
-            summary = analyze_result['s']
-            st.subheader("Brief Information")
-            st.text(summary)
-            st.subheader("Detailed Information")
-            if analyze_result['in_links']:
-                st.write("##### _Internal Links Source_")
-                for item in analyze_result['in_links']:
-                    st.write(item)
-                st.markdown("""---""")
-            if analyze_result['ex_links']:
-                st.write("##### _External Links Source_")
-                for item in analyze_result['ex_links']:
-                    st.write(item)
-                st.markdown("""---""")
-            if analyze_result['images']:
-                st.write("##### _Images Source_")
-                for item in analyze_result['images']:
-                    st.write(item)
-                st.markdown("""---""")
-            if analyze_result['audios']:
-                st.write("##### _Audio Source_")
-                for item in analyze_result['audios']:
-                    st.write(item)
-                st.markdown("""---""")
-            if analyze_result['videos']:
-                st.write("##### _Video Source_")
-                for item in analyze_result['videos']:
-                    st.write(item)
-                st.markdown("""---""")
-            if analyze_result['scripts']:
-                st.write("##### _Scripts Source_")
-                for item in analyze_result['scripts']:
-                    st.write(item)
-                st.markdown("""---""")
-        else:
-            st.error(analyze_result)
+   
+from PIL import Image
+
+filename = "infocryptoapp.png"
+with Image.open(filename) as image:
+	width, height = image.size
+#Image.size gives a 2-tuple and the width, height can be obtained
 
 
 if __name__ == "__main__":
     # render the app using streamlit ui function
     st_ui()
-    # url = "https://stackoverflow.com"
-    # analyze_result = analyze_webpage(url)
-    # if type(analyze_result) is dict:
-    #     summary = analyze_result['s']
-    #     print(summary)
-    # else:
-    #     print(analyze_result)
+
