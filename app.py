@@ -112,10 +112,10 @@ def st_ui():
     '''
     Render the User Interface of the application endpoints
     '''
-    st.title("Web_Page_Analyzer_Using_Python")
-    st.caption("Meta Data Extraction")
-    st.info("Developed by NANDHAKUMAR S [Daisi Hackathon]")
-    st.header("Enter a web page url to analyze its content")
+    st.title("QR_CODE_GENERATOR_INFOCRYPTO_APP")
+    st.caption("Get All The Info Regarding Your Favorite Crypto Currency")
+    st.info("Developed by MOHAMED FARHUN M, NANDHAKUMAR S, DHIVAKAR S [Daisi Hackathon]")
+    st.header("Scan this Generated QRcode below to land into our Infocrypto Tracking Project")
     url = st.text_input(label='Web Site URL', placeholder='Type your url')
     if url:
         analyze_result = analyze_webpage(url)
