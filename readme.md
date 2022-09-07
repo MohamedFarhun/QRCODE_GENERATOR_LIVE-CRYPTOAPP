@@ -82,7 +82,9 @@ qrcode_generator_infocrypto = pyd.Daisi("farhun/QRCODE GENERATOR-INFOCRYPTO")
 **Documented endpoints**
 
 analyze_webpage
+
 qrcode_generator_infocrypto.analyze_webpage(wp_url).value
+
 qrcode_generator_infocrypto.st_ui().value
 
 
