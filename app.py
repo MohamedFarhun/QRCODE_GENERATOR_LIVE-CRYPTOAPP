@@ -116,7 +116,7 @@ def st_ui():
     st.title("QR_CODE_GENERATOR_INFOCRYPTO_APP")
     st.caption("Get All The Info Regarding Your Favorite Crypto Currency")
     st.info("Developed by MOHAMED FARHUN M, NANDHAKUMAR S, DHIVAKAR S [Daisi Hackathon]")
-    st.header("Scan this Generated QRcode below to land into our Infocrypto Tracking Project")
+    st.header("Scan this Generated QRcode below to redirect into our Infocrypto Tracking Project")
     st.image(image, caption='Live Crypto Tracking App')
 
 
