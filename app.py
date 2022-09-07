@@ -121,21 +121,8 @@ def st_ui():
 
 import qrcode as qr
 img=qr.make("https://infocryptos.netlify.app/")
-img.save("infocryptoapp.png")
-
-import qrcode
-from PIL import Image
-
-qr=qrcode.QRCode(version=1,error_correction=qrcode.constants.ERROR_CORRECT_H,box_size=10,border=4,)
-
-qr.add_data("https://infocryptos.netlify.app/")
-
-qr.make(fit=True)
-img=qr.make_image(fill_color="red",back_color="white")
-
 import matplotlib.pyplot as plt
 import matplotlib.image as mpimg
-img = mpimg.imread('infocryptoapp.png')
 imgplot = plt.imshow(img)
 plt.show()
 
