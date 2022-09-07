@@ -117,8 +117,8 @@ def st_ui():
     st.caption("Get All The Info Regarding Your Favorite Crypto Currency")
     st.info("Developed by MOHAMED FARHUN M, NANDHAKUMAR S, DHIVAKAR S [Daisi Hackathon]")
     st.header("Scan this Generated QRcode below to land into our Infocrypto Tracking Project")
-    st.image(image, caption='Informations on Crypto Live')
-   
+    st.image("<h1 style='text-align: center;'>image</h1>", caption='Informations on Crypto Live')
+
 
 
 
