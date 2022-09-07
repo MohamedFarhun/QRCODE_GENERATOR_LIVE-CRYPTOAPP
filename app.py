@@ -106,7 +106,8 @@ Total JS Script: {len(scripts)}
     web_page['scripts'] = scripts_sc
     # web_page['display'] = display_sources
     return web_page
-
+from PIL import Image
+image = Image.open('infocryptoapp.png')
 
 def st_ui():
     '''
@@ -116,14 +117,8 @@ def st_ui():
     st.caption("Get All The Info Regarding Your Favorite Crypto Currency")
     st.info("Developed by MOHAMED FARHUN M, NANDHAKUMAR S, DHIVAKAR S [Daisi Hackathon]")
     st.header("Scan this Generated QRcode below to land into our Infocrypto Tracking Project")
+    st.image(image, caption='Informations on Crypto Live')
    
-
-
-
-from PIL import Image
-image = Image.open('infocryptoapp.png')
-
-st.image(image, caption='Informations on Crypto Live')
 
 
 
