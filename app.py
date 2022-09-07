@@ -126,9 +126,9 @@ im = Image.open("infocryptoapp.png")
 im.show()
 
 import matplotlib.pyplot as plt
-import matplotlib.image as mpimg
-img = mpimg.imread('infocryptoapp.png')
-imgplot = plt.imshow(img)
+import matplotlib.image as mpim
+im = mpim.imread('infocryptoapp.png')
+implot = plt.imshow(im)
 plt.show()
 
 
