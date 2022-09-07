@@ -1,121 +1,88 @@
-# Web Page Analyzer (Daisi Hackathon)
+# QRCODE GENERATOR USING STREAMLIT
+
+Streamlit is an open source app framework in Python language. It helps us create web apps for data science and machine learning in a short time. It is compatible with major Python libraries such as scikit-learn, Keras, PyTorch, SymPy(latex), NumPy, pandas, Matplotlib etc.
 
 Python function as a web service to scrape and analyze web page data according to most common **HTML** tags.
+Installed Python packages:-
+altair==4.2.0
+attrs==22.1.0
+backports.zoneinfo==0.2.1
+beautifulsoup4==4.11.1
+blinker==1.5
+cachetools==5.2.0
+certifi==2022.6.15
+charset-normalizer==2.1.1
+click==8.1.3
+commonmark==0.9.1
+cycler==0.11.0
+decorator==5.1.1
+entrypoints==0.4
+fonttools==4.37.1
+gitdb==4.0.9
+GitPython==3.1.27
+idna==3.3
+importlib-metadata==4.12.0
+importlib-resources==5.9.0
+Jinja2==3.1.2
+jsonschema==4.15.0
+kiwisolver==1.4.4
+MarkupSafe==2.1.1
+matplotlib==3.5.3
+numpy==1.23.2
+packaging==21.3
+pandas==1.4.4
+Pillow==9.2.0
+pip==22.2.2
+pkgutil_resolve_name==1.3.10
+protobuf==3.20.1
+pyarrow==9.0.0
+pydeck==0.8.0b1
+Pygments==2.13.0
+Pympler==1.0.1
+pyparsing==3.0.9
+pyrsistent==0.18.1
+python-dateutil==2.8.2
+pytz==2022.2.1
+pytz-deprecation-shim==0.1.0.post0
+qrcode==6.1
+requests==2.28.1
+rich==12.5.1
+semver==2.13.0
+setuptools==63.4.3
+six==1.16.0
+smmap==5.0.0
+soupsieve==2.3.2.post1
+streamlit==1.12.0
+toml==0.10.2
+toolz==0.12.0
+tornado==6.2
+typing_extensions==4.3.0
+tzdata==2022.2
+tzlocal==4.2
+urllib3==1.26.12
+validators==0.20.0
+watchdog==2.1.9
+wheel==0.37.1
+zipp==3.8.1
 
-It will return the following information:
-
-Web page title, Type of the web page, Domain of requested web page, number of heading `<h1>..<h6>` tags, number of paragraph `<p>` tags, number of ordered & unordered list `<ol><ul>` tags, number of image `<img>` tags, number of internal links of the requested web page, number of external links of the webpage, number of table `<table>` tags, number of form `<form>` tags, number of input `<input>` tags, number of button `<button>` tags, number of code snippet `<code>` tags, number of dropdown list `<select>` tags, number of audio `<audio>` tags, number of video `<video>` tags, number of Javascript client script `<script>` tags.
+Scan the QRCode which will redirect to our App:
+Our App:-
+  url=https://infocryptos.netlify.app/
 
 How to call it from Python:
 
 Step 1 : Load the Daisi
-
 <pre>
 import pydaisi as pyd
-Web_Page_Analyzer_Using_Python = pyd.Daisi("nandhakumars/Web_Page_Analyzer_Using_Python")
-</pre>
-Step 2 : call the `web_page_analyzer` end point, passing web page url to analyze its HTML content
-
-<pre>
-url = "https://www.stackoverflow.com"
-webpage_analytics = web_page_analyzer.analyze_webpage(url).value
-webpage_analytics
-</pre>
-
-returns a dictionary containing information about the requested web page.
-
-Step 3 : print web page analysis summary 
-<pre>
-webpage_analytics['s']
-</pre>
-
-Output:
-<pre>
-____________Summary______________
-Webpage Title: Stack Overflow - Where Developers Learn, Share, & Build Careers
-Type: HTML 5
-Domain: stackoverflow.com
-Total Heading: 42
-Total Paragraph: 170
-Total List: 49
-Total Image: 57
-Total Internal link: 400
-Total External link: 98
-Total Table: 0
-Total Form: 1
-Total Input: 2
-Total Button: 97
-Total Code snippet: 180
-Total Drop down list: 1
-Total Audio: 0
-Total Video: 0
-Total JS Script: 14
-</pre>
-
-Define helper function to display content of any tag sources:
-<pre>
-def display_src(src_arr):
-    if len(src_arr) > 0:
-        print(*src_arr, sep="\n")
-    else:
-        print("Sorry, no sources for this tag")
+qrcode_generator_infocrypto = pyd.Daisi("farhun/QRCODE GENERATOR-INFOCRYPTO")
 </pre>
 
 
-Display internal links of the requested wep page:
-<pre>
-display_src(webpage_analytics['in_links'])
-</pre>
+**Documented endpoints**
+analyze_webpage
+qrcode_generator_infocrypto.analyze_webpage(wp_url).value
+qrcode_generator_infocrypto.st_ui().value
 
-It will output links in this format:
-<pre>
-https://www.stackoverflow.com/#
-https://www.stackoverflow.com/teams
-https://www.stackoverflow.com/questions
-https://www.stackoverflow.com/teams
-https://stackoverflow.com
-</pre>
-
-Display external links of the requested wep page:
-<pre>
-display_src(webpage_analytics['ex_links'])
-</pre>
-
-Output:
-<pre>
-https://www.facebook.com/officialstackoverflow/
-https://twitter.com/stackoverflow
-https://linkedin.com/company/stack-overflow
-https://www.instagram.com/thestackoverflow
-</pre>
-Display images sources of the requested wep page:
-<pre>
-display_src(webpage_analytics['images'])
-</pre>
-Output:
-<pre>
-https://cdn.sstatic.net/Img/teams/teams-illo-free-sidebar-promo.svg?v=47faa659a05e
-https://cdn.sstatic.net/Img/home/illo-code.svg?v=b7ee00fff9d8
-https://cdn.sstatic.net/Img/home/illo-code.svg?v=b7ee00fff9d8
-https://cdn.sstatic.net/Img/home/illo-public.svg?v=14bd5a506009
-https://cdn.sstatic.net/Img/home/illo-teams.svg?v=7e543f14fcc0
-</pre>
-Display audio sources:
-<pre>
-display_src(webpage_analytics['audios'])
-</pre>
-Display video sources:
-<pre>
-display_src(webpage_analytics['videos'])
-</pre>
-Display scripts sources:
-<pre>
-display_src(webpage_analytics['scripts'])
-</pre>
-
-Function `st_ui` included in the app to render the user interface of the application endpoints.
-
-For more info check Daisi documentation: https://doc.daisi.io/
 
 
 
