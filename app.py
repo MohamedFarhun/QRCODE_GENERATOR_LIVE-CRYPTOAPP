@@ -1,5 +1,7 @@
 import streamlit as st
 from bs4 import BeautifulSoup
+import matplotlib.pyplot as plt
+import matplotlib.image as mpimg
 import requests
 from helper import webpage_type, validate_webpage, get_domain, scrap_links \
     , scrap_resource, scrap_av_media, display_sources
@@ -125,8 +127,7 @@ im = Image.open("infocryptoapp.png")
 #show image
 im.show()
 
-import matplotlib.pyplot as plt
-import matplotlib.image as mpimg
+
 img = mpimg.imread('infocryptoapp.png')
 imgplot = plt.imshow(img)
 plt.show()
