@@ -3,6 +3,7 @@
 Streamlit is an open source app framework in Python language. It helps us create web apps for data science and machine learning in a short time. It is compatible with major Python libraries such as scikit-learn, Keras, PyTorch, SymPy(latex), NumPy, pandas, Matplotlib etc.
 
 Python function as a web service to scrape and analyze web page data according to most common **HTML** tags.
+
 Installed Python packages:-
 altair==4.2.0
 attrs==22.1.0
