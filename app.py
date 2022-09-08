@@ -22,7 +22,7 @@ def st_ui():
         with col3:
             st.write("")        
      else:
-     
+         break:
  
    
 if __name__ == "__main__":
