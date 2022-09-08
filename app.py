@@ -119,7 +119,8 @@ def st_ui():
     st.header("Scan this Generated QRcode below to redirect into our Infocrypto Tracking Project")
     st.image(image, caption='Live Crypto Tracking App')
     st.balloons()
-
+    # Object notation
+    st.sidebar.[element_name]
 
 
 
