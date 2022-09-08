@@ -28,6 +28,4 @@ with st.sidebar:
     ("Excellent", "Good", "Not Bad")
     
    
-if __name__ == "__main__":
-    st_ui()
 
