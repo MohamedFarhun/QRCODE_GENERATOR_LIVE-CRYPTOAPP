@@ -18,7 +18,7 @@ def st_ui():
         with col3:
             st.write("")  
             
-      else:
+      else :
           st.write("Click to generate")
  
    
