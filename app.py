@@ -118,6 +118,9 @@ def st_ui():
     st.info("Developed by MOHAMED FARHUN M, NANDHAKUMAR S, DHIVAKAR S [Daisi Hackathon]")
     st.header("Scan this Generated QRcode below to redirect into our Infocrypto Tracking Project")
     st.image(image, caption='Live Crypto Tracking App')
+        with st.spinner("Generating..."):
+        time.sleep(3)
+    st.success("Done!")
     st.balloons()
     with st.container():
         st.write("This is inside the container")
