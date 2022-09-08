@@ -26,12 +26,12 @@ with st.sidebar:
     st.subheader("**_Do you like our Project_?**")
     col1, col2 = st.columns([1,1])
     with col1:
-        with st.expander("YES", icon= "✅"):
+        with st.expander("YES"):
             st.write("""
                 Thanks for your valuable feedback.
             """)
     with col2:
-        with st.expander("NO", icon= "✅"):
+        with st.expander("NO"):
             st.write("""
                 Oh no! Sorry and Thanks for your valuable feedback.
             """)
