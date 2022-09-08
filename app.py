@@ -8,16 +8,16 @@ def st_ui():
     st.header("Scan this Generated QRcode below to redirect into our Infocrypto Tracking Project")
     st.image(image, caption='Live Crypto Tracking App')
     st.balloons()
-    col1, col2, col3 = st.beta_columns([1,6,1])
+col1, col2, col3 = st.beta_columns([1,6,1])
 
 with col1:
-st.write("")
+    st.write("")
 
 with col2:
-st.image("infocryptoapp.png")
+    st.image("infocryptoapp.png")
 
 with col3:
-st.write("")
+    st.write("")
 
 if __name__ == "__main__":
     st_ui()
