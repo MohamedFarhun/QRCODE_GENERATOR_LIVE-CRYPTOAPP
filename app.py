@@ -119,7 +119,13 @@ def st_ui():
     st.header("Scan this Generated QRcode below to redirect into our Infocrypto Tracking Project")
     st.image(image, caption='Live Crypto Tracking App')
     st.balloons()
-    st.container()
+    with st.container():
+    st.write("This is inside the container")
+
+    # You can call any Streamlit command, including custom components:
+    st.bar_chart(np.random.randn(50, 3))
+
+st.write("This is outside the container")
 
 
 
