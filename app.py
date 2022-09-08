@@ -20,7 +20,10 @@ def st_ui():
     with col3:
         st.write("")       
 with st.sidebar:
-    st.write("This code will be printed to the sidebar.")
+    st.header("TEKKYZZ")
+    st.write("Leader : MOHAMED FARHUN M")
+    st.write("Members: NANDHAKUMAR S")
+    st.write("         DHIVAKAR S")
    
 if __name__ == "__main__":
     st_ui()
