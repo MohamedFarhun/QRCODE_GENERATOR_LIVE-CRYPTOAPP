@@ -18,7 +18,7 @@ def st_ui():
         st.image(image, caption='Live Crypto Tracking App')
     with col3:
         st.write("")  
-    st.success('QR code generated successfully!', icon:"✅")
+    st.success('QR code generated successfully!', icon="✅")
 with st.sidebar:
     st.header("TEKKYZZ")
     st.write("Leader   : MOHAMED FARHUN M")
