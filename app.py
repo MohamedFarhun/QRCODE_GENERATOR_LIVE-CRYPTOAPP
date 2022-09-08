@@ -121,6 +121,9 @@ def st_ui():
     st.balloons()
     # Object notation
     st.sidebar.[element_name]
+    # "with" notation
+    with st.sidebar:
+    st.[element_name]
 
 
 
