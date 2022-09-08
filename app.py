@@ -23,11 +23,18 @@ with st.sidebar:
     st.write("Leader   : MOHAMED FARHUN M")
     st.write("Member 1 : NANDHAKUMAR S")
     st.write("Member 2 : DHIVAKAR S")
-    add_selectbox = st.sidebar.selectbox(
-        "Please provide a feedback",
-        ("Excellent", "Good", "Not Bad")
-    )
-
-  
+    st.subheader("**_Do_you_like_our_Project_?**"):
+        col1, col2 = st.columns([1,1])
+        with col1:
+            with st.expander("YES"):
+                st.write("""
+                    Thanks for your valuable feedback.
+                """)
+        with col2:
+            with st.expander("NO"):
+                st.write("""
+                    Oh no! Sorry and Thanks for your valuable feedback.
+                """)
+                
 if __name__ == "__main__":
     st_ui()
