@@ -27,10 +27,10 @@ with st.sidebar:
     col1, col2 = st.columns([1,1])
     with col1:
         if st.button('Yes'):
-            st.write('Oh yah! Thanks for your valuable feedback')
+            st.write('Thanks for your valuable feedback...')
     with col2:
         if st.button('No'):
-            st.write('Oh no! Thanks for your valuable feedback ')
+            st.write('Will update our app soon...')
             
             
 if __name__ == "__main__":
