@@ -8,6 +8,9 @@ def st_ui():
     st.caption(" Get All The Info Regarding Your Favorite Crypto Currency")
     st.info("Developed by MOHAMED FARHUN M, NANDHAKUMAR S, DHIVAKAR S [Daisi Hackathon]", icon="©")
     st.header("Scan this Generated QRcode below to redirect into our Infocrypto Tracking Project")
+    with st.sidebar:
+    with st.echo():
+        st.write("This code will be printed to the sidebar.")
     my_bar = st.progress(0)
     for percent_complete in range(100):
          time.sleep(0.01)
