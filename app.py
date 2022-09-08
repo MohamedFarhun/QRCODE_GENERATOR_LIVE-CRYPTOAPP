@@ -10,7 +10,7 @@ def st_ui():
     st.header("Scan this Generated QRcode below to redirect into our Infocrypto Tracking Project")
     my_bar = st.progress(0)
     for percent_complete in range(100):
-         time.sleep(0.01)
+         time.sleep(0.1)
          my_bar.progress(percent_complete + 1)
     col1, col2, col3 = st.columns([3,6,3])
     with col1:
