@@ -21,9 +21,9 @@ def st_ui():
         st.write("")       
 with st.sidebar:
     st.header("TEKKYZZ")
-    st.write("Leader : MOHAMED FARHUN M")
-    st.write("Members: NANDHAKUMAR S")
-    st.write("         DHIVAKAR S")
+    st.write("Leader   : MOHAMED FARHUN M")
+    st.write("Member 1 : NANDHAKUMAR S")
+    st.write("Member 2 : DHIVAKAR S")
    
 if __name__ == "__main__":
     st_ui()
