@@ -120,7 +120,7 @@ def st_ui():
     st.image(image, caption='Live Crypto Tracking App')
     st.balloons()
     with st.spinner('Wait for it...'):
-    time.sleep(5)
+        time.sleep(5)
     st.success('Done!')
 
 
