@@ -17,7 +17,7 @@ def st_ui():
     with col2:
         st.image(image, caption='Live Crypto Tracking App')
     with col3:
-        st.write("")
+        st.write("hello")
     st.balloons()    
    
 if __name__ == "__main__":
