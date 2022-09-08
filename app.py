@@ -8,8 +8,8 @@ def st_ui():
     st.info("Developed by MOHAMED FARHUN M, NANDHAKUMAR S, DHIVAKAR S [Daisi Hackathon]")
     st.header("Scan this Generated QRcode below to redirect into our Infocrypto Tracking Project")
     my_bar = st.progress(0)
-    for percent_complete in range(50):
-        time.sleep(0.1)
+    for percent_complete in range(100):
+        time.sleep(0.01)
         my_bar.progress(percent_complete + 1)
     col1, col2, col3 = st.columns([1,6,1])
     with col1:
