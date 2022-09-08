@@ -20,7 +20,7 @@ def st_ui():
 with st.sidebar:
     st.image("Bitcoin.jpeg")
     st.header("TEKKYZZ")
-    st.write("Leader   : MOHAMED FARHUN M")
+    st.write("Leader___: MOHAMED FARHUN M")
     st.write("Member 1 : NANDHAKUMAR S")
     st.write("Member 2 : DHIVAKAR S")
     st.subheader("**_Do you like our Project_?**")
