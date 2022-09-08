@@ -18,11 +18,9 @@ def st_ui():
     with col2:
         st.image(image, caption='Live Crypto Tracking App')
     with col3:
-        st.write("") 
-        
+        st.write("")       
 with st.sidebar:
-    with st.echo():
-        st.write("This code will be printed to the sidebar.")
+    st.write("This code will be printed to the sidebar.")
    
 if __name__ == "__main__":
     st_ui()
