@@ -23,7 +23,7 @@ with st.sidebar:
     st.write("Leader   : MOHAMED FARHUN M")
     st.write("Member 1 : NANDHAKUMAR S")
     st.write("Member 2 : DHIVAKAR S")
-    st.subheader("**_Do_you_like_our_Project_?**"):
+    st.subheader("**_Do_you_like_our_Project_?**")
         col1, col2 = st.columns([1,1])
         with col1:
             with st.expander("YES"):
