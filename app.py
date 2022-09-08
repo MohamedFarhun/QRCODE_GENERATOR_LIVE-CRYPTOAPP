@@ -11,7 +11,7 @@ def st_ui():
     for percent_complete in range(100):
         time.sleep(0.01)
         my_bar.progress(percent_complete + 1)
-    col1, col2, col3 = st.columns([1,6,1])
+    col1, col2, col3 = st.columns([3,6,2])
     with col1:
         st.write("hi")
     with col2:
