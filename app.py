@@ -21,8 +21,8 @@ def st_ui():
             st.image(image, caption='Live Crypto Tracking App')
         with col3:
             st.write("")        
-     else:
-         break:
+      else:
+          break:
  
    
 if __name__ == "__main__":
