@@ -27,3 +27,7 @@ with st.sidebar:
         "Please provide a feedback",
         ("Excellent", "Good", "Not Bad")
     )
+
+  
+if __name__ == "__main__":
+    st_ui()
