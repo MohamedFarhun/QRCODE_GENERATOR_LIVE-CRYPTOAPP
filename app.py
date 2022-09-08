@@ -13,7 +13,7 @@ def st_ui():
         my_bar.progress(percent_complete + 1)
     col1, col2, col3 = st.columns([1,6,1])
     with col1:
-        st.write("")
+        st.write("hi")
     with col2:
         st.image(image, caption='Live Crypto Tracking App')
     with col3:
