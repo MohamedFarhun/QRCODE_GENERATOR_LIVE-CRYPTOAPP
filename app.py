@@ -12,11 +12,10 @@ def st_ui():
         st.write("")
 
     with col2:
-        st.image("infocryptoapp.png")
+        st.image(image, caption='Live Crypto Tracking App')
 
     with col3:
         st.write("")
-    st.image(image, caption='Live Crypto Tracking App')
     st.balloons()
     
 
