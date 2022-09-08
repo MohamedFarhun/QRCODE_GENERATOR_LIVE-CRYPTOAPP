@@ -18,10 +18,15 @@ def st_ui():
         st.write("")  
     st.success('QR code generated successfully!', icon= "✅")
 with st.sidebar:
+    st.image("Bitcoin.jpeg")
     st.header("TEKKYZZ")
     st.write("Leader   : MOHAMED FARHUN M")
     st.write("Member 1 : NANDHAKUMAR S")
     st.write("Member 2 : DHIVAKAR S")
+    add_selectbox = st.sidebar.selectbox(
+    "Please provide a feedback",
+    ("Excellent", "Good", "Not Bad")
+    
    
 if __name__ == "__main__":
     st_ui()
