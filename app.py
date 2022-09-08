@@ -9,21 +9,16 @@ def st_ui():
     st.header("Scan this Generated QRcode below to redirect into our Infocrypto Tracking Project")
     my_bar = st.progress(0)
     for percent_complete in range(50):
-    time.sleep(0.1)
-    my_bar.progress(percent_complete + 1)
+        time.sleep(0.1)
+        my_bar.progress(percent_complete + 1)
     col1, col2, col3 = st.columns([1,6,1])
-
     with col1:
         st.write("")
-
     with col2:
         st.image(image, caption='Live Crypto Tracking App')
-
     with col3:
         st.write("")
-    st.balloons()
-    
-
+    st.balloons()    
    
 if __name__ == "__main__":
     st_ui()
