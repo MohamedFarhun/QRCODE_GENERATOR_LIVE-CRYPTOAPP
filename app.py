@@ -24,8 +24,6 @@ with st.sidebar:
     st.write("Member 1 : NANDHAKUMAR S")
     st.write("Member 2 : DHIVAKAR S")
     add_selectbox = st.sidebar.selectbox(
-    "Please provide a feedback",
-    ("Excellent", "Good", "Not Bad")
-    
-   
-
+        "Please provide a feedback",
+        ("Excellent", "Good", "Not Bad")
+    )
