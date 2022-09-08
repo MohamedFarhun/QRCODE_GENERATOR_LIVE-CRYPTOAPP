@@ -119,9 +119,7 @@ def st_ui():
     st.header("Scan this Generated QRcode below to redirect into our Infocrypto Tracking Project")
     st.image(image, caption='Live Crypto Tracking App')
     st.balloons()
-    with st.spinner('Wait for it...'):
-        time.sleep(5)
-    st.success('Done!')
+    st.success('This is a success message!', icon:"✅")
 
 
 
